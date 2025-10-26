@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Union Style Scientific Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="calculator">
+    <div class="display">
+      <div class="expr" id="displayExpr">0</div>
+      <div class="result" id="displayResult">0</div>
+    </div>
+
+    <div class="grid" id="keys">
+      <button class="key func" data-display="MC" data-internal="mc">MC</button>
+      <button class="key func" data-display="MR" data-internal="mr">MR</button>
+      <button class="key func" data-display="M+" data-internal="mplus">M+</button>
+      <button class="key func" data-display="M-" data-internal="mminus">M-</button>
+      <button class="key func" data-display="C" data-internal="clear">C</button>
+
+      <button class="key func" data-display="sin(" data-internal="sin(">sin</button>
+      <button class="key func" data-display="cos(" data-internal="cos(">cos</button>
+      <button class="key func" data-display="tan(" data-internal="tan(">tan</button>
+      <button class="key func" data-display="ln(" data-internal="ln(">ln</button>
+      <button class="key func" data-display="log(" data-internal="log10(">log</button>
+
+      <button class="key func" data-display="√(" data-internal="sqrt(">√</button>
+      <button class="key func" data-display="x^y" data-internal="^">x^y</button>
+      <button class="key func" data-display="(" data-internal="(">(</button>
+      <button class="key func" data-display=")" data-internal=")">)</button>
+      <button class="key func" data-display="%" data-internal="%">%</button>
+
+      <button class="key" data-display="7" data-internal="7">7</button>
+      <button class="key" data-display="8" data-internal="8">8</button>
+      <button class="key" data-display="9" data-internal="9">9</button>
+      <button class="key op" data-display="/" data-internal="/">÷</button>
+      <button class="key func" data-display="π" data-internal="pi">π</button>
+
+      <button class="key" data-display="4" data-internal="4">4</button>
+      <button class="key" data-display="5" data-internal="5">5</button>
+      <button class="key" data-display="6" data-internal="6">6</button>
+      <button class="key op" data-display="*" data-internal="*">×</button>
+      <button class="key func" data-display="e" data-internal="e">e</button>
+
+      <button class="key" data-display="1" data-internal="1">1</button>
+      <button class="key" data-display="2" data-internal="2">2</button>
+      <button class="key" data-display="3" data-internal="3">3</button>
+      <button class="key op" data-display="-" data-internal="-">−</button>
+      <button class="key func" data-display="!" data-internal="fact">x!</button>
+
+      <button class="key wide" data-display="0" data-internal="0">0</button>
+      <button class="key" data-display="." data-internal=".">.</button>
+      <button class="key op" data-display="+" data-internal="+">+</button>
+      <button class="key equal" id="equals" data-display="=" data-internal="=">=</button>
+    </div>
+
+    <div class="footer-note">
+      Union Style Scientific Calculator — Clean glassy look with gradient background
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

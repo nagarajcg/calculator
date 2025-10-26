@@ -1,0 +1,110 @@
+:root {
+  --bg1: #a1c4fd;
+  --bg2: #c2e9fb;
+  --panel: rgba(255, 255, 255, 0.2);
+  --accent: #6c63ff;
+  --text: #1f2937;
+  --muted: #4b5563;
+  --soft-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--bg1), var(--bg2));
+  color: var(--text);
+}
+
+.calculator {
+  width: 380px;
+  background: var(--panel);
+  backdrop-filter: blur(15px);
+  border-radius: 25px;
+  padding: 25px;
+  box-shadow: var(--soft-shadow);
+}
+
+.display {
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 14px;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.2);
+  min-height: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+}
+
+.expr {
+  font-size: 15px;
+  color: var(--muted);
+  text-align: right;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.result {
+  font-size: 25px;
+  font-weight: 600;
+  text-align: right;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+
+button.key {
+  border: none;
+  border-radius: 12px;
+  padding: 12px;
+  font-size: 15px;
+  background: rgba(255, 255, 255, 0.5);
+  color: var(--text);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+
+button.key:hover {
+  background: rgba(255, 255, 255, 0.7);
+  transform: scale(1.05);
+}
+
+button.op {
+  background: rgba(255, 255, 255, 0.6);
+  font-weight: 600;
+}
+
+button.func {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+button.equal {
+  grid-column: span 2;
+  background: var(--accent);
+  color: white;
+  font-weight: 700;
+}
+
+.wide {
+  grid-column: span 2;
+}
+
+.footer-note {
+  margin-top: 15px;
+  text-align: center;
+  color: white;
+  font-size: 13px;
+}
